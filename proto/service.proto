@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "webstreaming/gen";
+
+package grpcstreaming;
+
+message ProcessRequest {
+	int32 count = 1;
+}
+
+message ProcessResponse {
+	string text = 1;
+}
+
+service Service {
+	rpc Process(ProcessRequest) returns (stream ProcessResponse);
+}

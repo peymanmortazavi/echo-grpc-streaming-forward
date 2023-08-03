@@ -1,0 +1,24 @@
+<head>
+	<style>
+		body {
+			padding: 15px;
+			margin: 15px;
+		}
+
+		div {
+			display: inline;
+			padding: 5px;
+		}
+		div:hover{
+			cursor: pointer;
+		}
+	</style>
+
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<input id="count" type="number" placeholder="10" value="10"></input>
+	<div onclick="handleClick()" id="request-btn" style="background: red">request</div>
+	<div id="response"></div>
+</body>
